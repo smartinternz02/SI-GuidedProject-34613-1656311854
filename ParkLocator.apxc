@@ -1,0 +1,8 @@
+public class ParkLocator {
+    public static String[] country(String theCountry){
+        ParkService.ParksImplPort parksev=
+            new ParkService.ParksImplPort();
+        return parksev.byCountry(theCountry);
+    }
+
+}
